@@ -12,6 +12,11 @@
 	"containerEnv": {
 		"JAVA_HOME": "/usr/lib/jvm/msopenjdk-current"
 	},
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		}
+	},
 
 	"customizations": {
 		"vscode": {
