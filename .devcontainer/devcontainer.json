@@ -17,6 +17,11 @@
 			"version": "latest"
 		}
 	},
+	"hostRequirements": {
+		"cpus": 4,
+		"memory": "8gb",
+		"storage": "32gb" 
+	},
 
 	"customizations": {
 		"vscode": {
@@ -32,4 +37,5 @@
 	"postAttachCommand": "./core/develop.sh &",
 
 	"remoteUser": "root"
+
 }
