@@ -33,8 +33,8 @@
 			]
 		}
 	},
-	"postStartCommand": " mvn --projects core,utils --also-make clean install -Dmaven.test.skip && mvn clean package -Dmaven.test.skip -P build-web-console",
-	"postAttachCommand": "./core/develop.sh &",
+	"postStartCommand": "mvn --projects core,utils --also-make clean install -Dmaven.test.skip && mvn clean package -Dmaven.test.skip -P build-web-console",
+	"postAttachCommand": "(mkdir /tmp/qdb && ./core/develop.sh)&",
 
 	"remoteUser": "root",
 	"forwardPorts": [

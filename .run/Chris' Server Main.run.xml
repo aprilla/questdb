@@ -2,9 +2,12 @@
   <configuration default="false" name="Chris' Server Main" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="17" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <envs>
+      <env name="VERSION" value="6.5.4" />
+    </envs>
     <option name="MAIN_CLASS_NAME" value="io.questdb.ServerMain" />
     <module name="questdb" />
-    <option name="PROGRAM_PARAMETERS" value="-d /tmp/qdb -p core/target/questdb-6.5.4-SNAPSHOT.jar" />
+    <option name="PROGRAM_PARAMETERS" value="-d /tmp/qdb -p core/target/questdb-${VERSION}-SNAPSHOT.jar" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
