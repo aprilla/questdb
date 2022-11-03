@@ -33,9 +33,19 @@
 			]
 		}
 	},
-
+	"postStartCommand": " mvn --projects core,utils --also-make clean install -Dmaven.test.skip && mvn clean package -Dmaven.test.skip -P build-web-console",
 	"postAttachCommand": "./core/develop.sh &",
 
-	"remoteUser": "root"
+	"remoteUser": "root",
+	"forwardPorts": [
+		"8812",
+		"9000",
+		"9009"
+	],
+	"portsAttributes": {
+		"9000": {
+			"label": "web"
+		}
+	}
 
 }
