@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f4eee01-aaa5-4d36-85ff-cc4cb2241742" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.devcontainer/scripts/setBuildNumber.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/devcontainer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.run/Chris' Server Main.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/Chris' Server Main.run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/develop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/core/develop.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

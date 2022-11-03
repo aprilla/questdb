@@ -33,8 +33,7 @@
 			]
 		}
 	},
-	"updateContentCommand": "mvn clean package -DskipTests -P build-web-console",
-	"postAttachCommand": "export QUEST_BUILD_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)",
+	"updateContentCommand": "mvn clean package -DskipTests -P build-web-console && /workspaces/questdb/.devcontainer/scripts/setBuildNumber.sh",
 	"remoteUser": "root",
 	"forwardPorts": [
 		"8812",
