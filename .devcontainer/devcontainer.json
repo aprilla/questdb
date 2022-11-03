@@ -33,9 +33,8 @@
 			]
 		}
 	},
-	"postStartCommand": "mkdir -p /tmp/qdb && mvn --projects core,utils --also-make clean install -Dmaven.test.skip && mvn clean package -Dmaven.test.skip -P build-web-console",
-	"postAttachCommand": "./core/develop.sh &",
-
+	"updateContentCommand": "mvn clean package -DskipTests -P build-web-console",
+	"postAttachCommand": "export QUEST_BUILD_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)",
 	"remoteUser": "root",
 	"forwardPorts": [
 		"8812",
