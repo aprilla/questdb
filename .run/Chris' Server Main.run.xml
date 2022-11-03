@@ -4,7 +4,7 @@
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="io.questdb.ServerMain" />
     <module name="questdb" />
-    <option name="PROGRAM_PARAMETERS" value="-d core/target -p core/target/questdb-${QUEST_BUILD_VERSION}.jar" />
+    <option name="PROGRAM_PARAMETERS" value="-p core/target/questdb-${QUEST_BUILD_VERSION}.jar -d core/target " />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

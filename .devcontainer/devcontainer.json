@@ -33,7 +33,7 @@
 			]
 		}
 	},
-	"updateContentCommand": "mvn clean package -DskipTests -P build-web-console && /workspaces/questdb/.devcontainer/scripts/setBuildNumber.sh",
+	"postStartCommand": "mvn clean package -DskipTests -P build-web-console && /workspaces/questdb/.devcontainer/scripts/setBuildNumber.sh",
 	"remoteUser": "root",
 	"forwardPorts": [
 		"8812",
