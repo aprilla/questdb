@@ -24,10 +24,7 @@
 #
 ################################################################################
 
-NEW_QUEST_BUILD_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-
-if grep "QUEST_BUILD_VERSION" /etc/environment &> /dev/null; then
-  sed -i "s/QUEST_BUILD_VERSION=\".*\"/QUEST_BUILD_VERSION=\"${NEW_QUEST_BUILD_VERSION}\"/g" /etc/environment
-else
-  echo "QUEST_BUILD_VERSION=\"${NEW_QUEST_BUILD_VERSION}\"" >> /etc/environment
-fi
+OUTPUT_FILE=/etc/profile.d/setQuestBuildNumber.sh
+echo "#!/bin/bash" > $OUTPUT_FILE
+echo "export QUEST_BUILD_VERSION=\"$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)\"" >> $OUTPUT_FILE
+echo "echo QUEST_BUILD_VERSION=\"\${QUEST_BUILD_VERSION}\"" >> $OUTPUT_FILE
