@@ -3,7 +3,7 @@
     <option name="ALTERNATIVE_JRE_PATH" value="17" />
     <option name="MAIN_CLASS_NAME" value="io.questdb.ServerMain" />
     <module name="questdb" />
-    <option name="PROGRAM_PARAMETERS" value="-d /tmp/qdb" />
+    <option name="PROGRAM_PARAMETERS" value="-d core/target" />
     <option name="VM_PARAMETERS" value="-da -XX:ErrorFile=hs_err_pid+%p.log -Xms512m -Dxebug -DXX:+PrintGCDetails -Djava.locale.providers=JRE,SPI" />
     <method v="2">
       <option name="Make" enabled="true" />

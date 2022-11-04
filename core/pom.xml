@@ -567,7 +567,6 @@
                     <groupId>org.jetbrains</groupId>
                     <artifactId>annotations</artifactId>
                     <version>16.0.2</version>
-                    <scope>provided</scope>
                 </dependency>
             </dependencies>
         </profile>
@@ -592,7 +591,6 @@
                     <groupId>org.jetbrains</groupId>
                     <artifactId>annotations</artifactId>
                     <version>17.0.0</version>
-                    <scope>provided</scope>
                 </dependency>
             </dependencies>
         </profile>
